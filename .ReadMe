@@ -1,0 +1,6 @@
+SnipIt is an application to take screenshots of your execution and create Word files of the screenshots.
+Buttons and their uses:
+  Capture - Take Screenshots
+  Save - Save the screenshots into a word file
+  Delay - Take screenshots after some delay
+  Reset - Delete all the screenshots taken and start from scratch
