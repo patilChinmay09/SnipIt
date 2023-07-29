@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="40"  xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" >
+    <children>
+        <HBox spacing="10">
+            <!-- Buttons with Images and Labels -->
+            <Button fx:id="button1" onAction="#onButton1Click" prefHeight="30" HBox.hgrow="ALWAYS">
+                <graphic>
+                    <HBox spacing="5" alignment="CENTER_LEFT">
+                        <ImageView fx:id="captureImage" fitHeight="20" fitWidth="20" />
+                        <Label text="Capture"/>
+                    </HBox>
+                </graphic>
+            </Button>
+
+            <Button fx:id="button2" onAction="#onSaveClick" prefHeight="30" HBox.hgrow="ALWAYS">
+                <graphic>
+                    <HBox spacing="5" alignment="CENTER_LEFT">
+                        <ImageView fx:id="saveImage" fitHeight="20" fitWidth="20" />
+                        <Label text="Save"/>
+                    </HBox>
+                </graphic>
+            </Button>
+
+           
+        <MenuButton fx:id="menuButton" text="" HBox.hgrow="ALWAYS">
+                <graphic>
+                    <HBox spacing="5" alignment="CENTER_LEFT">
+                        <ImageView fx:id="delayImage" fitHeight="20" fitWidth="20" />
+                        <Label text="Delay"/>
+                    </HBox>
+                </graphic>
+                <items>
+                <MenuItem onAction="#onMenuItemClick">
+                        <graphic>
+                            <HBox spacing="5" alignment="CENTER_LEFT">
+                                <Label text="0 Seconds"/>
+                            </HBox>
+                        </graphic>
+                    </MenuItem>
+                    <MenuItem onAction="#onMenuItemClick">
+                        <graphic>
+                            <HBox spacing="5" alignment="CENTER_LEFT">
+                                <Label text="5 Seconds"/>
+                            </HBox>
+                        </graphic>
+                    </MenuItem>
+                    <MenuItem onAction="#onMenuItemClick">
+                        <graphic>
+                            <HBox spacing="5" alignment="CENTER_LEFT">
+                                <Label text="10 Seconds"/>
+                            </HBox>
+                        </graphic>
+                    </MenuItem>
+                    <MenuItem onAction="#onMenuItemClick">
+                        <graphic>
+                            <HBox spacing="5" alignment="CENTER_LEFT">
+                                <Label text="15 Seconds"/>
+                            </HBox>
+                        </graphic>
+                    </MenuItem>
+                </items>
+            </MenuButton>
+
+
+        <!-- Another Button with Image and Label -->
+        <Button fx:id="button4"  onAction="#onResetClick" prefHeight="30" HBox.hgrow="ALWAYS">
+            <graphic>
+                <HBox spacing="5" alignment="CENTER_LEFT">
+                    <ImageView fx:id="resetImage" fitHeight="20" fitWidth="20" />
+                    <Label text="Reset"/>
+                </HBox>
+            </graphic>
+        </Button>
+        </HBox>
+
+        
+    </children>
+</VBox>
